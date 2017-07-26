@@ -11,7 +11,7 @@
     "dev": "webpack & node server",
     "start": "node server",
     "build": "webpack -w",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "repository": {
     "type": "git",
