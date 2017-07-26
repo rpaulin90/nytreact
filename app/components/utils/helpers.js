@@ -1,8 +1,11 @@
 // Include the axios package for performing HTTP requests (promise based alternative to request)
 var axios = require("axios");
+var express = require("express");
+
 
 // Geocoder API
 var nytAPI = "b9f91d369ff59547cd47b931d8cbc56b:0:74623931";
+
 
 // Helper functions for making API Calls
 var helper = {
@@ -11,6 +14,8 @@ var helper = {
     runQuery: function(query,start,end) {
 
         console.log(query);
+
+        // This allows Cross-Origin Requests to our server
 
         // Figure out the geolocation
         var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + nytAPI +"&q=" + query + "&begin_date=" + start + "0101&end_date=" + end + "0101";

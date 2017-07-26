@@ -7,6 +7,7 @@ var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
+
 // Require History Schema
 var Article = require("./models/Article");
 
@@ -23,6 +24,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.use(express.static("public"));
+
 
 // -------------------------------------------------
 
