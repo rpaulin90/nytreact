@@ -81,9 +81,9 @@ var Main = React.createClass({
             <div className="container">
                 <div className="row">
                     <div className="jumbotron">
-                        <h2 className="text-center">Address Finder!</h2>
+                        <h2 className="text-center">NYT Article Scrubber!</h2>
                         <p className="text-center">
-                            <em>Enter a landmark to search for its exact address (ex: "Eiffel Tower").</em>
+                            <em>Search for and annotate articles of interest</em>
                         </p>
                     </div>
 

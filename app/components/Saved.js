@@ -54,7 +54,7 @@ var Saved = React.createClass({
                     .then(function(response) {
 
                         that.props.setArticles(response.data);
-                        this.setState({ note: ""});
+                        that.setState({ note: ""});
 
                     }.bind(this));
 
@@ -86,6 +86,7 @@ var Saved = React.createClass({
 
                     {this.props.articles.map(function(article, i) {
                         let boundItemClick = that.onItemClick.bind(this, article);
+
                         return (
                             <div key={i} style={{marginTop: "10px", marginBottom: "10px", paddingBottom: "10px", borderBottom: "1px black solid" }}>
                                 <div style={div_styling}>
